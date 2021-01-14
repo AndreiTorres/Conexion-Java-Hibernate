@@ -8,3 +8,5 @@ Tener xampp, y phpmyadmin para poder acceder a la base de datos. La practica se 
  
 
 
+### Link del video de la presentacion
+https://www.youtube.com/watch?v=zBibPLjiP1M
