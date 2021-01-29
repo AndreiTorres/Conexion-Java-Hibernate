@@ -61,7 +61,7 @@ public class DBConnection {
 
 ~~~
 
-El siguiente paso es configurar nuestro archivo *pom.xml*, pasandole unicamente el url a la base de datos, como en la clase DBConnection, el nombre del usuario y la contraseña, en el caso de usar postgresql se tiene que cambiar el dialecto. Este archivo se puede conseguir muy facilmente en la web, buscando *hibernate config xml*.
+El siguiente paso es configurar nuestro archivo *pom.xml*, pasandole el url a la base de datos, como en la clase DBConnection, el nombre del usuario y la contraseña, en el caso de usar postgresql se tiene que cambiar el dialecto. Este archivo se puede conseguir muy facilmente en la web, buscando *hibernate config xml*.
 
 ~~~
 <?xml version="1.0" encoding="UTF-8"?>
