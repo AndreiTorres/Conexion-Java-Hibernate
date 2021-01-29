@@ -14,6 +14,9 @@ que relaciones existen y que forma tienen. Con esta información Hibernate le pe
 manipular los datos que hay en la base de datos operando sobre objetos, con todas las caracteristicas
 de la Programación Orientada a Objetos.
 
+Por lo tanto, Hibernate nos ayuda a no tener que usar el lenguaje SQL y hacer todas las consultas utilizando
+métodos.
+
 # Conexion-Java-Hibernate
 
 Descargar la carpeta donde se encuentran la libreria de hibernate necesaria, 
