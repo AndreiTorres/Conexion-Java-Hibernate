@@ -176,9 +176,9 @@ Ya que tenemos nuestra tabla y sus columnas representadas en una clase con sus a
 
 Para todos los métodos que nos brinda hibernate para guardar, eliminar, actualizar y consultar nuestros datos necesitamos esta estructura.
 
-**SessionFactory** es un objeto de configuración, se utiliza para crear un objeto para nuestro programa que utiliza el archivo de configuración suministrado, y permite que objeto de tipo **Session** sea ejecutado. Basicamente arranca o activa Hibernate.
+**SessionFactory** es un objeto de configuración, se utiliza para crear un objeto para nuestro programa que utiliza el archivo de configuración suministrado, y permite que un objeto de tipo **Session** sea ejecutado. Básicamente arranca o activa Hibernate.
 
-**Session** Se utiliza para obtener una conexión fisica con la base de datos. Esta clase nos proporciona los métodos necesarios para la manipulación de los registros con la base.
+**Session** Se utiliza para obtener una conexión fisica con la base de datos. Esta clase nos proporciona los métodos necesarios para la manipulación de los registros con la base de datos.
 
 ~~~
 import org.hibernate.Session;
@@ -222,13 +222,13 @@ session.close();
 
 El método a utilizar es **update(Object object)**, al que le debemos pasar el objeto a actualizar en la base de datos.
 ~~~
-int idUser = 1;    
+int idUser = 1;                                //Id del usuario que se desea modificar
 mySession.beginTransaction();
-User user = mySession.get(User.class, idUser);
+User user = mySession.get(User.class, idUser);       //mySession.get(), nos devuelve el usuario que tiene el id que se la pasa como parámetro
 
-user.setDireccion("Las Americas");
+user.setDireccion("Las Americas");                //Modificamos la dirección del usuario
 
-mySesssion.update(user);
+mySesssion.update(user);                          //Actualizamos la direccion del usuario en la base de datos
 session.getTransaction().commit();
 session.close();
 
@@ -253,9 +253,9 @@ session.close();
 ### Leer
 ~~~
 mySession.beginTransaction();
-List<User> allUsers = mySession.createQuery("from User).getResultList();
+List<User> allUsers = mySession.createQuery("from User).getResultList();     //Nos devuelve una lista de todos los registros que estan en la base de datos
             
-allUsers.stream().forEach(user -> System.out.println(user));
+allUsers.stream().forEach(user -> System.out.println(user));                 //Se imprime cada usuario, el formato depende del método toString() de la clase User.java
 
 mySession.getTransaction().commit();
 mySession.close();
