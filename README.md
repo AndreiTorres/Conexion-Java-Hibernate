@@ -208,7 +208,7 @@ User user = new User("Andrei", "Torres", "Fco de Montejo");  //Creamos el objeto
 Session session = sessionFactory.openSession();
 session.beginTransaction();
  
-session.save(usuario); //<|--- Aqui guardamos el objeto en la base de datos.
+session.save(user); //<|--- Aqui guardamos el objeto en la base de datos.
  
 session.getTransaction().commit();
 session.close();
