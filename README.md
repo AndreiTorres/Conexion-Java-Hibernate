@@ -239,11 +239,11 @@ session.close();
 Ahora pasemos a borrar un objeto desde la base de datos.El método que debemos usar es **delete(Object object)**, al que le deberemos pasar el objeto a borrar de la base de datos
 ~~~
 
-int idUser = 1;    
+int idUser = 1;                                      //Id del usuario que se desea modificar
 mySession.beginTransaction();
-User user = mySession.get(User.class, idUser);
+User user = mySession.get(User.class, idUser);       //mySession.get(), nos devuelve el usuario que tiene el id que se la pasa como parámetro
 
-mySession.delete(user);
+mySession.delete(user);                             //Borramos el usuario de la base de datos
 
 mySesssion.update(user);
 session.getTransaction().commit();
