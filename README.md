@@ -87,11 +87,11 @@ El siguiente paso es configurar nuestro archivo *pom.xml*, pasandole unicamente 
 
 Ya que tenemos el archivo configurado correctamente, lo que sigue es representar nuestra tabla en una clase.
 
-*@Entity* con esta anotación le estamos diciendo a JPA que esta clase es una Entidad y deberá ser administrada por EntityManager.
+**@Entity** con esta anotación le estamos diciendo a JPA que esta clase es una Entidad y deberá ser administrada por EntityManager.
 
-*@Table* con esta anotación le decimos que tabla de la base de datos estamos representando.
+**@Table** con esta anotación le decimos que tabla de la base de datos estamos representando.
 
-*@Id* con esta anotación le decimos a JPA que atributo será nuestra llave primaria, esta sera administrada automaticamente por el gestor de la base de datos.
+**@Id** con esta anotación le decimos a JPA que atributo será nuestra llave primaria, esta sera administrada automaticamente por el gestor de la base de datos.
 
 Es necesario definir el constructor por default, en el caso de que querramos consultar todos los registros de la base. 
 
@@ -172,9 +172,9 @@ Ya que tenemos nuestra tabla y sus columnas representadas en una clase con sus a
 
 Para todos los métodos que nos brinda hibernate para guardar, eliminar, actualizar y consultar nuestros datos necesitamos esta estructura.
 
-*SessionFactory* es un objeto de configuración, se utiliza para crear un objeto para nuestro programa que utiliza el archivo de configuración suministrado, y permite que objeto de tipo **Session** sea ejecutado. Basicamente arranca o activa Hibernate.
+**SessionFactory** es un objeto de configuración, se utiliza para crear un objeto para nuestro programa que utiliza el archivo de configuración suministrado, y permite que objeto de tipo **Session** sea ejecutado. Basicamente arranca o activa Hibernate.
 
-*Session* Se utiliza para obtener una conexión fisica con la base de datos. Esta clase nos proporciona los métodos necesarios para la manipulación de los registros con la base.
+**Session** Se utiliza para obtener una conexión fisica con la base de datos. Esta clase nos proporciona los métodos necesarios para la manipulación de los registros con la base.
 
 ~~~
 import org.hibernate.Session;
