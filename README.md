@@ -74,11 +74,11 @@ El siguiente paso es configurar nuestro archivo *pom.xml*, pasandole unicamente 
 
 <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 
-<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/clientes</property>
+<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/NOMBREDELABASE</property>
 
-<property name="hibernate.connection.username">root</property>
+<property name="hibernate.connection.username">NOMBREDEUSUARIO</property>
 
-<property name="hibernate.connection.password"> </property>
+<property name="hibernate.connection.password">PASSWORD</property>
 
 </session-factory>
 
