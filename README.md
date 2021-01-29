@@ -4,6 +4,7 @@ Hibernate es una herramienta de mapeo objeto-relacional (ORM) que facilita
 el mapeo de atributos en una base de datos tradicional, y el modelo de objetos de
 una aplicación mediante archivos declarativos *pom.xml* o anotaciones en los beans de las entidades
 que permiten establecer relaciones.
+(Referencia)[https://ifgeekthen.everis.com/es/que-es-java-hibernate-por-que-usarlo].
 
 ### ¿Porque usar Hibernate?
 
