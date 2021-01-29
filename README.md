@@ -257,7 +257,7 @@ mySession.getTransaction().commit();
 mySession.close();
 ~~~
 
-Tambien se pueden consultar datos especificos usando el lenguaje de consulta de Hibernate **HQL**.
+También se pueden consultar datos específicos usando el lenguaje de consulta de Hibernate **HQL**.
 
 Pueden consultar el lenguaje en el siguiente enlace https://docs.jboss.org/hibernate/orm/3.5/reference/es-ES/html/queryhql.html
 
