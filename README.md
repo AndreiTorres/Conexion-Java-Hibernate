@@ -94,7 +94,8 @@ Ya que tenemos el archivo configurado correctamente, lo que sigue es representar
 
 **@Table** con esta anotación le decimos que tabla de la base de datos estamos representando.
 
-**@Id** con esta anotación le decimos a JPA que atributo será nuestra llave primaria, esta sera administrada automaticamente por el gestor de la base de datos.
+**@Id** con esta anotación le decimos a JPA que atributo será nuestra llave primaria, esta sera administrada automaticamente por el gestor de la base de datos, por
+lo que no es necesario pasar este atributo al constructor.
 
 Es necesario definir el constructor por default, en el caso de que querramos consultar todos los registros de la base. 
 
