@@ -219,13 +219,13 @@ session.close();
 El método a utilizar es **update(Object object)**, al que le debemos pasar el objeto a actualizar en la base de datos.
 ~~~
 int idUser = 1;    
-            mySession.beginTransaction();
-            User user = mySession.get(User.class, idUser);
+mySession.beginTransaction();
+User user = mySession.get(User.class, idUser);
 
-            user.setDireccion("Las Americas");
+user.setDireccion("Las Americas");
 
-            mySesssion.update(user);
-            session.getTransaction().commit();
+mySesssion.update(user);
+session.getTransaction().commit();
 session.close();
 
 ~~~
@@ -236,25 +236,25 @@ Ahora pasemos a borrar un objeto desde la base de datos.El método que debemos u
 ~~~
 
 int idUser = 1;    
-            mySession.beginTransaction();
-            User user = mySession.get(User.class, idUser);
+mySession.beginTransaction();
+User user = mySession.get(User.class, idUser);
 
-            mySession.delete(user);
+mySession.delete(user);
 
-            mySesssion.update(user);
-            session.getTransaction().commit();
+mySesssion.update(user);
+session.getTransaction().commit();
 session.close();
 ~~~
 
 ### Leer
 ~~~
 mySession.beginTransaction();
-            List<User> allUsers = mySession.createQuery("from User).getResultList();
+List<User> allUsers = mySession.createQuery("from User).getResultList();
             
-            allUsers.stream().forEach(user -> System.out.println(user));
+allUsers.stream().forEach(user -> System.out.println(user));
 
-            mySession.getTransaction().commit();
-            mySession.close();
+mySession.getTransaction().commit();
+mySession.close();
 ~~~
 
 Tambien se pueden consultar datos especificos usando el lenguaje de consulta de Hibernate **HQL**.
