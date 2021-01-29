@@ -27,7 +27,7 @@ Tener xampp, y phpmyadmin para poder acceder a la base de datos. La practica se 
 ### Link del video de la presentacion
 https://www.youtube.com/watch?v=zBibPLjiP1M
 
-CRUD en Java utilizando Hibernate
+## Ejemplo básico: CRUD en Java utilizando Hibernate
 
 Una vez que tenemos el entorno configurado correctamente, *librerias y drivers necesarios*, empezamos a crear el CRUD. En este caso haremos un CRUD  de usuarios con nombre, apellidos y direccion.
 
